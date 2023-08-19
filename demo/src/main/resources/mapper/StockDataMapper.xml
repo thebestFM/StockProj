@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.demo818.demo.mapper.StockDataMapper">
+
+    <select id="getRecordsByTimestamp" resultType="com.demo818.demo.pojo.StockData">
+        SELECT stock_id AS stockId, timestamp, close_price AS closePrice FROM stock_kline WHERE timestamp = 1692169200000
+    </select>
+
+
+</mapper>
